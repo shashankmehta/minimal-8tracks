@@ -1,0 +1,54 @@
+#minimal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2c3e50;
+  z-index: 1000;
+  text-align: left;
+  color: white; }
+  #minimal .m-close {
+    color: white;
+    font-size: 30px;
+    right: 30px;
+    top: 30px;
+    position: absolute;
+    cursor: pointer; }
+  #minimal .m-content {
+    width: 300px;
+    margin: auto; }
+    #minimal .m-content .m-cover {
+      text-align: center;
+      position: relative; }
+      #minimal .m-content .m-cover img {
+        width: 300px;
+        margin-top: 50px;
+        box-shadow: 0px 0px 20px 5px #333; }
+      #minimal .m-content .m-cover .m-progress {
+        height: 3px;
+        position: absolute;
+        width: 300px;
+        bottom: 5px; }
+        #minimal .m-content .m-cover .m-progress .m-progress-meter {
+          width: 0px;
+          height: 3px;
+          background: #c0392b; }
+    #minimal .m-content .m-info .m-controls {
+      float: right;
+      width: 50px; }
+      #minimal .m-content .m-info .m-controls .m-icon {
+        font-size: 30px;
+        cursor: pointer; }
+        #minimal .m-content .m-info .m-controls .m-icon.i-skip {
+          padding-left: 15px; }
+    #minimal .m-content .m-info .m-track {
+      margin-top: 15px;
+      line-height: 1.3em;
+      width: 250px;
+      padding: 0 10px 0 0;
+      box-sizing: border-box; }
+      #minimal .m-content .m-info .m-track .m-t {
+        font-size: 1.3em;
+        font-weight: 600;
+        padding-bottom: 5px; }

@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+
+    "name": "Minimal 8tracks",
+    "description": "Minimal. No clutter. Enjoy the music.",
+    "version": "1.0",
+
+    "icons": {
+      "48": "img/icon-48.png",
+      "128": "img/icon-128.png",
+      "256": "img/icon.png"
+    },
+
+    "browser_action": {
+        "default_icon": "img/icon.png"
+    },
+    "permissions": [
+         "tabs", "http://8tracks.com/*"
+     ],
+     "background": {
+        "scripts": ["js/background.js"],
+        "persistent": false
+     }
+}

@@ -1,0 +1,82 @@
+#minimal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2c3e50;
+  z-index: 1000;
+  text-align: left;
+  color: white;
+
+  .m-close {
+    color: white;
+    font-size: 30px;
+    right: 30px;
+    top: 30px;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .m-content {
+    width: 300px;
+    margin: auto;
+
+    .m-cover {
+      text-align: center;
+      position: relative;
+
+      img {
+        width: 300px;
+        margin-top: 50px;
+        box-shadow: 0px 0px 20px 5px #333;
+      }
+  
+      $height: 3px;
+      $bottom: 5px;
+
+      .m-progress {
+        height: $height;
+        position: absolute;
+        width: 300px;
+        bottom: $bottom;
+
+        .m-progress-meter {
+          width: 0px;
+          height: $height;
+          background: #c0392b;
+        }
+      }
+    }
+  
+    .m-info {
+      .m-controls {
+        float: right;
+        width: 50px;
+
+        .m-icon {
+          font-size: 30px;
+          cursor: pointer;
+
+          &.i-skip {
+            padding-left: 15px;
+          }
+        }
+      }
+
+      .m-track {
+        margin-top: 15px;
+        line-height: 1.3em;
+        width: 250px;
+        padding: 0 10px 0 0;
+        box-sizing: border-box;
+
+        .m-t {
+          font-size: 1.3em;
+          font-weight: 600;
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+}
